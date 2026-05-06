@@ -1,0 +1,11 @@
+from dataclasses import dataclass
+
+from src.py_to_cpp_converter.models.code_object import CodeObject
+
+
+@dataclass
+class ForLoop(CodeObject):
+    iter_var_name: str
+    start_index: str
+    end_index: str
+    step: str
